@@ -2,6 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import LifecycleDemo from './LifecycleDemo';
+import Top from './Top';
+import ThreeCounts from './ThreeCounts';
+import PropChangeWatch from './PropChangeWatch';
+import Demo from './PropChangeWatch';
+import UseRefTest from './UseRef';
+import FetchDataTest from './FetchData';
 
 function App() {
    // Set up a piece of state, so that we have
@@ -27,6 +33,11 @@ function App() {
       <button onClick={reRender}>Re-render</button>
       <button onClick={toggle}>Show/Hide LifecycleDemo</button>
       {mounted && <LifecycleDemo/>}
+      <Top/>
+      <ThreeCounts/>
+      <Demo/>
+      <UseRefTest/>
+      <FetchDataTest/>
     </>
   );
 }
